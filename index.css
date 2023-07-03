@@ -1,0 +1,911 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,600&family=Arvo:ital@1&family=Bebas+Neue&family=Caveat:wght@500&family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@1,500&family=Pacifico&family=Permanent+Marker&family=Roboto+Condensed&family=Seaweed+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,600&family=Arvo:ital@1&family=Bebas+Neue&family=Caveat:wght@500&family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@1,500&family=Pacifico&family=Permanent+Marker&family=Roboto+Condensed&family=Roboto+Slab&family=Seaweed+Script&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+body{
+    background-image: url('background.jpg ');
+}
+
+/* total header */
+
+#navBlock{
+    width: 100%;
+    height: 20vh;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    /* background-color: rgb(245, 171, 34); */
+}
+#navBlock>article{
+    width: 90%;
+    height: inherit;
+    margin: 0 auto 50px;
+    /* background-color: aqua; */
+}
+#navBlock>article>.navBlock_part{
+    width: 100%;
+    height: 90px;
+    /* background-color: bisque; */
+    display: flex;
+    align-items: center;
+}
+#navBlock>article>.navBlock_part>.logoBlock{
+    flex-basis: 50%;
+    height: inherit;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    /* margin-right: 10px; */
+}
+.navBlock_part>.logoBlock >h2{
+text-transform: uppercase;
+font-size: 28px;
+color: rgb(65,14,14 );
+margin-left: 12px;
+font-family: 'Antonio', sans-serif;
+letter-spacing: 0.2px;
+
+}
+.navBlock_part>.logoBlock i{
+    font-size: 23px;
+    color: rgb(65, 14, 14);
+}
+.navBlock_part>.menuBlock{
+    flex-basis: 50%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    /* background-color: rgb(0, 200, 255); */
+    position: relative;
+    margin-top: -2px;
+}
+.menuLinks{
+    padding-top: 10px;
+}
+.menuBlock >.menuLinks >ul{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    bottom: 20px;
+    right: -23px;
+
+}
+.menuBlock > .bicycle_part{
+    position: absolute;
+    top: -10px;
+    right: 0;
+    color: rgb(65, 14, 15);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.menuBlock>.bicycle_part >a{
+    color: rgb(65, 14, 15);
+        text-decoration: none;
+        font-size: 18px;
+}
+.menuBlock >.menuLinks >ul>li>a{
+    text-decoration: none;
+    margin-right: 50px; 
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(65, 14, 15);
+    letter-spacing: 1.5px;
+    padding-left: 0 auto;
+    font-family: 'Bebas Neue', cursive;
+    transition: all 0.1s ease-in-out;
+}
+
+.menuBlock >.menuLinks >ul>li>a:hover{
+    border-bottom: 2px solid rgb(65, 14, 14);
+    transition: all 0.1s ease-in-out;
+}
+
+/* first content welcome */
+
+.content-block{
+    display: flex;
+    height: 60vh;
+    margin: 0 auto;
+    width: 90%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.content-block .content-block1{
+    flex-basis: 50%;
+    height: inherit;
+    position: relative;
+    align-items:center;
+    margin: 40px 0px 0px;
+}
+.content-block .content-block2{
+    flex-basis: 50%;
+    height: inherit;
+    position: relative;
+    align-items:center;
+    margin: 40px 0px 0px;
+}
+.content-block div p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    color: rgb(65, 14, 15);
+    width: max-content;
+    height:max-content;
+    font-family: 'Antonio', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px dashed rgb(65, 14, 14);
+    border-radius: 0 5px 0 0;
+    padding: 5px;
+
+}
+.content-block div h1{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    text-transform: uppercase;
+    color: rgb(65, 14, 15);
+    width: max-content;
+    height:max-content;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 90px;
+    font-weight: 900;
+    text-shadow: 3px 3px rgb(240, 240, 240);
+}
+.content-block div h2{
+    position: absolute;
+    top: 130px;
+    left: 0;
+    text-transform: uppercase;
+    color: rgb(65, 14, 15);
+    width: max-content;
+    height:max-content;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 45px;
+    font-weight: bolder;
+    text-shadow: 3px 3px rgb(240, 240, 240);
+    text-align: center;
+}
+.content-block2 .img-1{
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    height: 280px;
+    width: 320px;
+    z-index: 3;
+}
+.content-block2 .img-2{
+    position: absolute;
+    top: -104px;
+    left: 350px;
+    height: 380px;
+    width: 130px;
+    margin: 10px 0px 0px;
+}
+.content-block2 .img-3{
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    height: 280px;
+    width: 250px;
+}
+.content-block2 .img-4{
+    position: absolute;
+    top: -147px;
+    left: 129px;
+    height: 284px;
+    width: 300px;
+}
+.content-block2 .img-5 {
+    position: absolute;
+    top: 292px;
+    left: 60px;
+    height: 40px;
+    width: 400px;
+    z-index: 2;
+}
+.content-block2 .img-6 {
+    position: absolute;
+    top: 287px;
+    left: 300px;
+    height: 30px;
+    width: 250px;
+}
+.price{
+    display: inline-block;
+    color: white;
+    border-radius: 80%;
+    background-color: red;
+    border: 1px solid red;
+    outline-color: white;
+    outline-offset: -12px;
+    outline-style: dashed;
+    outline-width: 8px 8px;
+    height: 130px;
+    width: 125px;
+    align-items: center;
+    z-index: 5;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    top: 180px;
+    left: 5px;
+    font-family: 'Antonio', sans-serif;
+    line-height: 20px;
+    animation-name: price;
+    animation-timing-function: ease-in-out;
+    animation-duration: 15s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes price {
+    0%{
+        background-color: orange;
+        color: blue;
+        border-color: orange;
+        outline-color: blue;
+        transform: scale(1),rotateY(-360deg)
+    }    
+    25%{
+        background-color: rgb(238, 197, 62);
+        color: black;
+        border-color: bisque;
+        outline-color: black;
+        transform: scale(1.1);
+    }
+    50%{
+        background-color: black;
+        color: aqua;
+        border-color: black;
+        outline-color: aqua;
+        transform: scale(1.2),rotateX(180deg);
+    }
+    75%{
+        background-color: white;
+        border-radius: white;
+        color: red;
+        outline-color: red;
+        transform: scale(1.1),rotateY(180deg);
+    }
+}
+.price small{
+    font-size: 15px;
+    font-family: 'Antonio', sans-serif;
+}
+.price b{
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: 'Antonio', sans-serif;
+}
+
+/* gallery images */
+
+#gall-content{
+    width: 100%;
+    height: 80vh;
+    background-color: whitesmoke;
+    padding-top: 10vh;
+}
+#gall-content article{
+    display: flex;
+    width: 88%;
+    margin: 0 auto;
+    height: 65vh;
+    justify-content: space-between;
+}
+#gall-content > article div{
+    flex-basis: 50%;
+    width: 100%;
+    height: 65vh;
+    margin: 10px;
+}
+#gall-content > article .gal-left1{
+    background-image: url(./imgs/gal.png);
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: 'Antonio', sans-serif;
+}
+#gall-content > article .gal-left2 aside{
+    width: 100%;
+    margin: 3%;
+    height: 48%;
+    background-image: url(./imgs/gal2.jpeg);
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: 'Antonio', sans-serif;
+}
+#gall-content > article .gal-left2 aside:first-child{
+    margin-top: 0px;
+    background-image: url(./imgs/gal3.jpeg);
+}
+#gall-content > article .gal-left1 h1{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#gall-content > article .gal-left1 h2{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+#gall-content > article .gal-left2 aside h1{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#gall-content > article .gal-left2 aside h2{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Menu 3 burger */
+
+#menu{
+    width: 100%;
+    background-color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 20PX;
+}
+#menu h2{
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(240, 188, 56);
+    color: black;
+    text-transform: uppercase;
+    height: max-content;
+    width: max-content;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+#menu h1{
+    color: rgb(65, 14, 15);
+    width: max-content;
+    height:max-content;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 45px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-top: 20px;
+}
+#menu > p{
+    width: 80%;
+    height: max-content;
+    margin: 0 auto;
+    text-align: center;
+}
+#menu > article{
+    display: flex;
+    width: 98%;
+    margin: 5% auto 6%;
+}
+#menu > article figure {
+    flex-basis: 33%;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 10%;
+}
+#menu > article .menu3{
+    margin-right: 0px;
+}
+#menu > article figure img{
+    height: min-content;
+    width: 90%;
+    text-align: center;
+}
+/* .menu-shadow1{
+    width: 800px;
+    height: 70px;
+    padding-top: -10px;
+} */
+#menu > article figure figcaption{
+    font-family: 'Antonio', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(65, 14, 14);
+    text-align: center;
+    line-height: 40px;
+}
+#menu > article figure p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#menu > article figure button{
+    text-align: center;
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    border: 2px red solid;
+    padding: 8px;
+    width: 150px;
+    font-size: 14px;
+    font-family: poppins;
+}
+
+/* about */
+
+#about{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 90vh;
+    padding: 20px 0 20px 5px;
+    align-items: center;
+    overflow: hidden;
+}
+#about article {
+    position: relative;
+    margin: 10px auto 0px;
+    width: 90%;
+    height: 68vh;
+    padding: 1%;
+    box-shadow: 8px 9px 12px 3px rgb(169, 165, 165);
+    /* padding: 15px 0px 0px 15px; */
+    overflow: hidden;
+}
+#about article .event1{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 68vh;
+    background-color: whitesmoke;
+    /* animation-name: event1;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; */
+    transition: ease-in-out;
+}
+#about article .event1 div{
+    flex-basis: 50%;
+    width: 100%;
+    height: inherit;
+    position: relative;
+}
+#about article .event1 .about-left{
+    padding: 20px 0px 10px 30px ;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 35px;
+}
+#about article .event1 h2{
+    font-family: 'Antonio', sans-serif;
+    font-size: 23px;
+    color: rgb(65, 14, 14);   
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+#about article .event1 h1{
+    color: rgb(65, 14, 15);
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#about article .event1 .about-right{
+    padding: 0;
+    margin: 0;
+}
+#about article .event1 .about-right img{
+    display: block;
+    width: 100%;
+}
+
+#about article .event1 div span{
+    position: relative;
+    bottom: -14%;
+    left: 0.6%;
+}
+#about article .event1 span input{
+    accent-color:rgb(240, 188, 56);
+    border: none;
+}
+
+/* div-2 */
+
+#about article .event2{
+    display: flex;
+    height: 68vh;
+    position: absolute;
+    right: -100%;
+    z-index: 2;
+    background-color: rgb(219, 63, 94);
+    animation-name: event2;
+    animation-duration: 9s;
+    /* animation-delay: 3s; */
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transition: ease-in-out;
+}
+
+#about article .event2 div{
+    flex-basis: 50%;
+    width: 100%;
+    height: inherit;
+    position: relative;
+    color: whitesmoke;
+}
+#about article .event2 .about-left{
+    padding: 20px 0px 10px 30px ;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 35px;
+}
+#about article .event2 h2{
+    font-family: 'Antonio', sans-serif;
+    font-size: 23px;
+    color: whitesmoke;   
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+#about article .event2 h1{
+    color:white;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#about article .event2 .about-right{
+    padding: 0;
+    margin: 0;
+}
+#about article .event2 .about-right img{
+    display: block;
+    width: 100%;
+    padding: 1%;
+}
+
+#about article .event2 div span{
+    position: relative;
+    bottom: -17%;
+    left: 3%;
+}
+#about article .event2 span input{
+    accent-color:navy;
+    border: none;
+}
+
+/* div-3 */
+
+#about article .event3 {
+    display: flex;
+    position: absolute;
+    right: -200%;
+    width: 100%;
+    height: 68vh;
+    background-image: url(./event-4.png);
+    background-size: cover;
+    z-index: 3;
+    animation-name: event3;
+    animation-duration: 9s;
+    /* animation-delay: 8s; */
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transition: ease-in-out;
+}
+
+#about article .event3 div{
+    flex-basis: 50%;
+    width: 100%;
+    height: inherit;
+    position: relative;
+}
+#about article .event3 .about-left{
+    padding: 20px 0px 10px 30px ;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 35px;
+    color:white;
+}
+#about article .event3 h2{
+    font-family: 'Antonio', sans-serif;
+    font-size: 23px;
+    color: white;   
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+#about article .event3 h1{
+    color:  white;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+#about article .event3 .about-right{
+    padding: 0;
+    margin: 0;
+}
+#about article .event3 .about-right img{
+    display: block;
+    width: 100%;
+    border: 10px;
+    opacity: 0.9;
+    border-left: 3px solid inherit;
+    border-radius: 2%;
+    padding: 3%;
+}
+
+#about article .event3 div span{
+    position: relative;
+    bottom: -17%;
+    left: 3%;
+}
+#about article .event3 span input{
+    accent-color:rgb(43, 242, 111);
+    border: none;
+}
+/* @keyframes event1{
+    0%{
+        opacity: 1;
+    }
+    10%{
+        opacity: 0;
+    }
+    98%{
+        opacity: 0;
+    }
+    100%{
+        display: 1;
+    }
+} */
+@keyframes event2{
+    0%{
+        position: absolute;
+        right: -100%;
+    }
+    33%{
+        position: absolute;
+        right: -100%;
+        transition: ease-in-out;
+    }
+    33%
+    {
+        position: absolute;
+        top:0px;
+        left: 0px;
+        width: 100%;
+        transition: ease-in-out;
+    }
+    70%{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        transition: ease-in-out;
+    }
+    71%{
+        right: -100%;
+        transition: ease-in-out;
+    }
+    100%{
+        right: -100%;
+    }
+}
+@keyframes event3{
+    0%{
+        position: absolute;
+        right: -100%;
+    }
+    66%{
+        position: absolute;
+        right: -100%;
+    }
+    70%
+    {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        transition: ease-in-out;
+    }
+    80%{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        transition: ease-in-out;
+    }
+    100%{
+        right: -100%;
+    }
+}
+/* slideshow starts here */
+
+#about article span{
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+#about article span input{
+    accent-color:rgb(240, 188, 56);
+    border: none;
+}
+
+
+/* Table Reservation form */
+
+#info-cust{
+    width: 100%;
+    height: 85vh;
+    background-color: whitesmoke;
+    position: relative;
+    padding-top:5%;
+}
+#info-cust article{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+#info-cust article h2{
+    font-family: 'Antonio', sans-serif;
+   font-size: 23px;
+    color: rgb(65, 14, 14);   
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-align: center;
+    }
+    #info-cust article h1{
+        color: rgb(65, 14, 15);
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 40px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    #info-cust table{
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    #info-cust input{
+        height: 7vh;
+        width: 25vw;
+        margin: 0;
+        padding: 10px;
+    }
+    [type="button"]{
+        color: white;
+        font-weight: 900;
+        border: 2px solid red;
+        background-color: red;
+        font-size: 24px;
+    }
+    .info-img1{
+        position: absolute;
+        top: -70px;
+        left: 0px;
+    }
+    .info-img2{
+        position: absolute;
+        top: 24vh;
+        left: 8vw;
+        /* transition: 1s all ease-in-out; */
+        animation-name: bottle;
+        animation-delay: 3s;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+    }
+    .info-img3{
+        position: absolute;
+        top: 30vh;
+        right: 0;
+    }
+    @keyframes bottle{
+        0%{
+            transform: rotateZ(0deg);
+        }
+        10%{
+            transform: rotateZ(360deg);
+        }
+        20%{
+            transform: rotateZ(720deg);
+        }
+        30%{
+            transform: rotateZ(1080deg);
+        }
+        40%{
+            transform: rotateZ(1440deg);
+        }
+        50%{
+            transform: rotateZ(1800deg);
+        }
+         60%{
+            transform: rotateZ(1440deg);
+        }
+        70%{
+            transform: rotateZ(1080deg);
+        }
+        80%{
+            transform: rotateZ(720deg);
+        }
+        90%{
+            transform: rotateZ(360deg);
+        }
+    }
+
+    /* footer */
+
+    #foot{
+        position: relative;
+        width: 100%;
+        background-color: whitesmoke;
+        /* padding: 10% 2% 15% 2%; */
+        margin: 0 auto;
+        height: 80vh;
+    }
+    #foot article{
+        width: 98%;
+        margin: 0 auto -10%;
+        height: 70vh;
+        /* position: absolute;
+        top: 30px; */
+        background-image: url(./images/bg_footer.png);
+        background-size: cover;
+        display: flex;
+    }
+    #foot article div{
+        flex-basis: 50%;
+        margin-right: 5%;
+        position: relative;
+    }
+    #foot article div p{
+        margin-top: 3%;
+    }
+    #foot article div h4{
+        font-weight: 500;
+        position: absolute;
+        bottom: 3vh;
+
+    }
+    #foot article div:first-child{
+        padding-left: 2%;
+        padding-top: 2%;
+        color: white;
+        line-height: 30px;
+        font-size: 14px;
+        align-items: flex-start;
+    }
+    .footer-right  h3{
+        align-content: center;
+        font-weight: 500px;
+        color: white;
+        left: 40%;
+        position: absolute;
+        top: 40%;
+        font-size: 18px;
+    }
+    .footer-right  h4{
+        position: absolute;
+        top: 55%;
+        left: 40%;
+        color: white;
+        font-size: 18px;
+    }
+    .footer-right ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        width: 30%;
+    }
+    .footer-right ul{
+    margin-right: 10px;
+    position: absolute;
+    bottom: 2vh;
+    right: -5vw;
+    }
